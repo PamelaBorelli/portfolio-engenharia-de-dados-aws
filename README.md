@@ -1,26 +1,37 @@
-
-# Instruções
-
-Neste arquivo você fará a sua apresentação, assim como a organização geral das suas entregas ao longo das Sprints. Esperamos que haja, minimamente:
- 
-- Uma seção de apresentação, com informações como cidade de residência, instituição de ensino, curso e semestre atual, experiências na área de tecnologia (se houver), hobbies e outras informações que você julgar importante para os monitores.
-
-- Uma ou mais seções para descrever o que estiver aprendendo (resumo), de maneira estruturada. Na medida que você avança no programa de bolsas, deverá alimentar para criar um portfólio de seus estudos.
-
-- De forma opcional, sugerimos que você adicione uma foto ao seu perfil do GitHub, pois utilizamos tal informação para facilitar a sua identificação ao longo do processo. Lembre-se que a informação é pública, tal qual você pode testar no exemplo do repositório da [
-The Apache Software Foundation](https://github.com/apache.png?size=250).
-
-
-Para cada Sprint, crie um arquivo README.md na respectiva pasta. Este arquivo será o relato da sua entrega. Considere organizar neste arquivo a entrega do desafio, a apresentação dos códigos desenvolvidos, imagens que evidenciam a execução (se necessário) e as imagens dos certificados dos cursos solicitados.
-
-
-Veja um modelo de estrutura básica a seguir:
-
-___
-
 ## Apresentação
+<br>
+<img align="right" width="45%" height="490em" src="https://avatars.githubusercontent.com/u/102415224?s=400&u=5483cd911e80b5542027420b4c0d8a0bb0cb22d4&v=4"/>
+<h1 align="left"> Olá, sou a Pamela Borelli <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" height="30px"></p>
 
-Olá, sou ...
+### Estudo Desenvolvimento de Software na FATEC-Franca e atuo como residente em IA através da parceria PUC-Campinas e CPQD. Tenho muito interesse na área de Dados
+
+
+ <br><br>
+
+
+### Studying at this moment:
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-0D1117?style=for-the-badge&logo=scikit-learn&labelColor=0D1117)&nbsp;
+![Pandas](https://img.shields.io/badge/pandas-0D1117?style=for-the-badge&logo=pandas&labelColor=0D1117)&nbsp;
+![Pytorch](https://img.shields.io/badge/pytorch-0D1117?style=for-the-badge&logo=pytorch&labelColor=0D1117)&nbsp;
+![Numpy](https://img.shields.io/badge/numpy-0D1117?style=for-the-badge&logo=numpy&labelColor=0D1117)&nbsp;
+![TensorFlow](https://img.shields.io/badge/tensorflow-0D1117?style=for-the-badge&logo=tensorflow&labelColor=0D1117)&nbsp;
+![Leras](https://img.shields.io/badge/keras-0D1117?style=for-the-badge&logo=keras&labelColor=0D1117)&nbsp;
+
+### Other Knowledge:
+![Node.JS](https://img.shields.io/badge/-Node.JS-0D1117?style=for-the-badge&logo=node.js&labelColor=0D1117&textColor=0D1117)&nbsp;
+![React](https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![React-Native](https://img.shields.io/badge/react--native-0D1117?style=for-the-badge&logo=react&logoColor=FFFFFF)&nbsp;
+![Boostrap](https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117)&nbsp;
+![HTML5](https://img.shields.io/badge/HTML5-0D1117?style=for-the-badge&logo=html5&logoColor=red)&nbsp;
+![CSS](https://img.shields.io/badge/CSS3-0D1117?style=for-the-badge&logo=css3&logoColor=blue)&nbsp;
+![MySQL](https://img.shields.io/badge/-mysql-0D1117?style=for-the-badge&logo=mysql&labelColor=0D1117)&nbsp;
+![MongoDB](<https://img.shields.io/badge/-mongodb-0D1117?style=for-the-badge&logo=mongodb&labelColor=0D1117”/>)&nbsp;
+
+
+<!--  <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=FF00FF&height=120&section=footer"/>
+ -->
+
+
 
 ## Sprints 
 
