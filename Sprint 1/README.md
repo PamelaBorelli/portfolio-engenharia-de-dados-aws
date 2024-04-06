@@ -15,11 +15,14 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 
 1. ...
-[Resposta Ex1.](exercicios/ex1.txt)
+[Resposta 4.1 Criar arquivo executável.](exercicios/codigo_processamento_de_venda.txt)
 
 
 2. ...
-[Resposta Ex2.](exercicios/ex2.txt)
+[Resposta 4.2 Agendar a execução do processamento](exercicios/comando_crontab.txt)
+
+3. ...
+[Resposta 4.3 Criar novo relatório](exercicios/codigo_consolidado_processamento_de_venda.txt)
 
 
 
@@ -30,14 +33,7 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
 
 
-![Evidencia 1](evidencias/sample.webp)
+[Evidencia 1](evidencias/evidencia_desafio_sprint_1.pdf)
 
-
-
-# Certificados
-
-
-- Certificado do Curso ABC
-![Curso ABC](certificados/sample.png)
 
 

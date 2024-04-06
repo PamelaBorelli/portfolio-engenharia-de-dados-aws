@@ -1,0 +1,1 @@
+27 15 * * * /usr/bin/processamento_de_vendas.sh >> /mnt/c/ecommerce/output.log 2>> /mnt/c/ecommerce/error.log
