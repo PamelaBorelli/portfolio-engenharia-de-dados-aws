@@ -29,10 +29,7 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 # Evidências
 
-
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
-
-
+Os comentários estão todos dentro do arquivo.
 [Evidencia 1](evidencias/evidencia_desafio_sprint_1.pdf)
 
 
