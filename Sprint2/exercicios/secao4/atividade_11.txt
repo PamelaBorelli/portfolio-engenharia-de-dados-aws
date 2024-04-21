@@ -1,0 +1,12 @@
+
+E11
+Apresente a query para listar o código e nome cliente com maior gasto na loja. As colunas presentes no resultado devem ser cdcli, nmcli e gasto, esta última representando o somatório das vendas (concluídas) atribuídas ao cliente.
+
+SELECT cdcli, nmcli, gasto
+FROM (
+    SELECT cdcli, nmcli, estado, cidade, SUM((qtd * vrunt)) as gasto, 
+           RANK() OVER (ORDER BY SUM((qtd * vrunt)) DESC) as rank
+    FROM tbvendas 
+    GROUP BY cdcli
+) AS subquery                 
+WHERE rank = 1
