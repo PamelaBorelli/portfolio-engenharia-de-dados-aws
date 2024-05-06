@@ -1,0 +1,23 @@
+Abrindo o csv notei que o nome "Robert Downey, Jr." estava separado por vírgula. Mas o separador é vírgula também, o que causava erro na hora de usar o dataset. Se eu mudasse o separador para ' ; ' não iria resolver por que "Robert Downey, Jr." passaria para "Robert Downey; Jr.", o que geraria o mesmo erro.
+
+Então optei por abrir com separador ' , ' e posteriormente concatenar "Robert Downey" e "Jr." ficando "Robert Downey Jr."
+
+
+
+with open('/content/actors.csv', 'r') as arquivo:
+    linhas = arquivo.readlines()
+
+dataset = []
+for linha in linhas:
+    # Dividindo cada linha por vírgula para obter os campos individuais
+    campos = linha.strip().split(',')
+    # Encontrando o nome "Robert Downey" e o sobrenome é "Jr."
+    if campos[0] == "Robert Downey" and campos[1].strip() == "Jr.":
+        # Concatenando o nome e o sobrenome
+        campos[0] = campos[0] + " " + campos[1].strip()
+        # Removendo o sobrenome da lista de campos
+        campos.pop(1)
+    dataset.append(campos)
+
+for linha in dataset:
+    print(linha)

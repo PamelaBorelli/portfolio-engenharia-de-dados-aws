@@ -1,0 +1,35 @@
+Exercícios Parte 2
+Dada as listas a seguir:
+
+primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'José']
+sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
+idades = [19, 28, 25, 31]
+
+Faça um programa que imprima o dados na seguinte estrutura: "índice - primeiroNome sobreNome está com idade anos".
+
+Exemplo:
+
+0 - João Soares está com 19 anos
+
+#Você deve Utilizar a função enumerate().
+
+
+
+# Primeiro Código
+primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'José']
+sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
+idades = [19, 28, 25, 31]
+
+# Fazendo a iteração sobre as listas
+for i, primeiroNome in enumerate(primeirosNomes):
+    print(f"{i} - {primeiroNome} {sobreNomes[i]} está com {idades[i]} anos")
+
+
+# Segundo Código
+primeirosNomes = ['Joao', 'Douglas', 'Lucas', 'José']
+sobreNomes = ['Soares', 'Souza', 'Silveira', 'Pedreira']
+idades = [19, 28, 25, 31]
+
+# Fazendo a iteração sobre as listas
+for i, (primeiroNome, sobreNome, idade) in enumerate(zip(primeirosNomes, sobreNomes, idades)):
+    print(f"{i} - {primeiroNome} {sobreNome} está com {idade} anos")

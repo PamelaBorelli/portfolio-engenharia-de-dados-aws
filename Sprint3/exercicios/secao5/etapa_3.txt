@@ -1,0 +1,22 @@
+## Etapa 3
+
+Apresente o ator/atriz com maior média de receita de bilheteria bruta por filme do conjunto de dados. Considere a coluna 'Average per Movie' para fns de cálculo
+
+# A mesma função da Etapa '1', porém mudando a coluna num_filme por average_per_movie
+def actors_max_avg(dataset):
+  ator_max_movie = ''
+  max_movie = 0
+  # Lendo o dataset linha por linha e eliminando a primeira
+  for linha in dataset[1:]:
+    # Variáveis temporárias
+    ator = linha[0]
+    average_per_movie_f1 = float(linha[3])
+    # Encontra o ator com maior média de receita de bilheteria bruta
+    if average_per_movie_f1 > max_movie:
+        ator_max_movie = ator
+        max_movie = average_per_movie_f1
+  return ator_max_movie, max_movie
+
+# Imprimindo os resultados
+ator, average_per_movie_f1 = actors_max_avg(dataset)
+print(f'O ator/atriz, {ator}, tem a maior media de receita por filme: {average_per_movie_f1}')
