@@ -10,16 +10,16 @@ O desafio está presente em cada sprint ao longo do estágio. Utilize o diretór
 
 
 1. ...
-[Etapa I 4.1 Criar arquivo executável](/Sprint%201/Desafio/ecommerce/processamento_de_vendas.sh)
+[Etapa I 4.1 Criar arquivo executável](/Sprint1/Desafio/ecommerce/processamento_de_vendas.txt)
 
 
 2. ...
 [Etapa II 4.2 Agendar a execução do processamento](../exercicios/comando_crontab.txt)
 3. ...
-[Etapa II 4.3 Criar novo relatório](/Sprint%201/Desafio/ecommerce/consolidador_de_processamento_de_vendas.sh)
+[Etapa II 4.3 Criar novo relatório](/Sprint1/Desafio/ecommerce/consolidador_de_processamento_de_vendas.txt)
 
 4. ...
-[Resultado - relatorio_final](/Sprint%201/Desafio/ecommerce/relatorio_final.txt)
+[Resultado - relatorio_final](/Sprint1/Desafio/ecommerce/relatorio_final.txt)
 
 
 

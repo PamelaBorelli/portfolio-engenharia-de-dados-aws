@@ -66,5 +66,9 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 Os comentários estão todos dentro do arquivo.
 [Evidencia 2](evidencias/Relatório_evidências_Sprint%202.pdf)
 
+# Desafio
+
+Os comentários estão todos dentro do arquivo.
+[Desafio 2](desafio/README.md)
 
 
