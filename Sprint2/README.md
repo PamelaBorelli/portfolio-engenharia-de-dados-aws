@@ -15,39 +15,39 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa√
 
 ## secao3
 1. ...
-[Atividade 1](exercicios/secao3/atividade_1.txt)
+[Atividade 1](exercicios/secao3/atividade_1.md)
 1. ...
-[Atividade 2](exercicios/secao3/atividade_2.txt)
+[Atividade 2](exercicios/secao3/atividade_2.md)
 1. ...
-[Atividade 3](exercicios/secao3/atividade_3.txt)
+[Atividade 3](exercicios/secao3/atividade_3.md)
 1. ...
-[Atividade 4](exercicios/secao3/atividade_4.txt)
+[Atividade 4](exercicios/secao3/atividade_4.md)
 1. ...
-[Atividade 5](exercicios/secao3/atividade_5.txt)
+[Atividade 5](exercicios/secao3/atividade_5.md)
 1. ...
-[Atividade 6](exercicios/secao3/atividade_6.txt)
+[Atividade 6](exercicios/secao3/atividade_6.md)
 
 
 ## secao4
 
 1. ...
-[Atividade 1](exercicios/secao4/atividade_8.txt)
+[Atividade 8](exercicios/secao4/atividade_8.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_9.txt)
+[Atividade 9](exercicios/secao4/atividade_9.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_10.txt)
+[Atividade 10](exercicios/secao4/atividade_10.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_11.txt)
+[Atividade 11](exercicios/secao4/atividade_11.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_12.txt)
+[Atividade 12](exercicios/secao4/atividade_12.md)
 1. ...
-[Atividade 1](exercicios/secao4/exercicio_13.txt)
+[Atividade 13](exercicios/secao4/atividade_13.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_14.txt)
+[Atividade 14](exercicios/secao4/atividade_14.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_15.txt)
+[Atividade 15](exercicios/secao4/atividade_15.md)
 1. ...
-[Atividade 1](exercicios/secao4/atividade_16.txt)
+[Atividade 16](exercicios/secao4/atividade_16.md)
 
 ## secao6
 1. ...

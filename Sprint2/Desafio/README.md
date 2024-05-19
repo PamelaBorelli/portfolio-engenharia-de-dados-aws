@@ -10,7 +10,7 @@ O desafio está presente em cada sprint ao longo do estágio. Utilize o diretór
 
 
 1. ...
-[Etapa I fazer a normalização e as dimensões](dump-concessionaria-202404211657.sql)
+[Etapa I fazer a normalização e as dimensões](dump-concessionaria-202404211657.md)
 
 
 2. ...

@@ -1,0 +1,16 @@
+## Exercícios 10
+
+Escreva uma função que recebe uma lista e retorna uma nova lista **sem elementos duplicados.** Utilize a lista a seguir para testar sua função.
+
+
+```
+lista = ['abc', 'abc', 'abc', '123', 'abc', '123', '123']
+
+# Função para receber a lista sem elementos duplicados
+def lista_sem_repeticao(lista):
+    lista_nova = list(set(lista))
+    return lista_nova
+
+# Print da lista
+print(lista_sem_repeticao(lista))
+```

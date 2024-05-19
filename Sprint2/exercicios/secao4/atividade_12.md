@@ -1,0 +1,24 @@
+## Exercicio  12
+
+Apresente a query para listar código, nome e data de nascimento dos dependentes do vendedor com menor valor total bruto em vendas (não sendo zero). As colunas presentes no resultado devem ser cddep, nmdep, dtnasc e valor_total_vendas.
+
+Observação: Apenas vendas com status concluído.
+
+```
+SELECT depend.cddep, depend.nmdep, depend.dtnasc, vendas_info.valor_total_vendas
+FROM tbvendedor AS vendedor 
+RIGHT JOIN tbdependente AS depend 
+	ON vendedor.cdvdd = depend.cdvdd
+INNER JOIN (
+	SELECT vendedor.cdvdd, SUM(vendas.qtd * vendas.vrunt) AS valor_total_vendas
+	FROM tbvendedor AS vendedor
+	LEFT JOIN tbvendas AS vendas 
+		ON vendedor.cdvdd = vendas.cdvdd
+	WHERE vendas.status = 'Concluído'
+	GROUP BY vendedor.cdvdd
+	HAVING SUM(vendas.qtd * vendas.vrunt) > 0
+	ORDER BY SUM(vendas.qtd * vendas.vrunt)
+	LIMIT 1
+) AS vendas_info ON vendedor.cdvdd = vendas_info.cdvdd
+ORDER BY depend.cddep
+```

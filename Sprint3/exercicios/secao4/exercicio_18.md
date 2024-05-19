@@ -1,0 +1,18 @@
+## Exercício 18
+Dado o dicionário a seguir:
+
+- speed = {'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53, 'july':54, 'Aug':44, 'Sept':54}
+
+Crie uma lista com todos os valores **(não as chaves!)** e coloque numa lista de forma que não haja valores duplicados
+
+```
+speed = {'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53, 'july':54, 'Aug':44, 'Sept':54}
+
+# Cria uma lista com os valores do dicionário
+lista = list(speed.values())
+
+# Remove duplicatas convertendo a lista para um conjunto e depois de volta para uma lista
+lista = list(set(lista))
+
+print(lista)
+```

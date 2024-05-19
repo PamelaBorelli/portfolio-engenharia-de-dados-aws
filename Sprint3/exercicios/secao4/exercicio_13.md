@@ -1,0 +1,18 @@
+## Exercício 13
+
+Escreva um programa que lê o conteúdo do arquivo texto arquivo_texto.txt e imprime o seu conteúdo.
+
+Dica: leia a documentação da função **open(...)**
+
+```
+# Código para o teste do exercício
+# with open('/content/arquivo_texto.txt', 'r') as f:
+#     linhas = f.read()
+
+# print(linhas)
+
+# Código para teste na Udemy
+with open('/content/arquivo_texto.txt', 'r') as f:
+    for linha in f:
+        print(linha, end='')
+```
