@@ -31,7 +31,7 @@ Em seu desenvolvimento você deverá utilizar lambdas e as seguintes funções:
 
 - sorted
 
-
+```
 import csv
 
 def processa_notas(notas):
@@ -53,7 +53,7 @@ with open('estudantes.csv', 'r') as f:
 # Ordena a lista de estudantes em ordem alfabética
 estudantes = sorted(estudantes, key=lambda x: x[0])
 
-```
+
 # Processa as notas de cada estudante
 for estudante in estudantes:
     nome = estudante[0]

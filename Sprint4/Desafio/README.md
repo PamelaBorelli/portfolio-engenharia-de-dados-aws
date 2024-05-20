@@ -10,7 +10,7 @@ O desafio está presente em cada sprint ao longo do estágio. Utilize o diretór
 
 
 1. ...
-[Etapa Colab com o desafio da Sprint](markdown.md)
+[Desafio da Sprint](desafio_sprint4.md)
 
 
 

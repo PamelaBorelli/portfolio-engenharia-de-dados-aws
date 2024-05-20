@@ -81,7 +81,7 @@ for _ in range(3):
 - 6- Criar imagem
 
 Reutilizei o dockerfile já criado. Só criei mais um COPY e comentei o CMD com o arquivo carguru.py. Depois criei a imagem mascarar_dados.
-Neste Dockerfile, estamos usando a imagem base python:3.8. O comando WORKDIR /app define o diretório de trabalho dentro do contêiner. O comando COPY copia o arquivo script.py (que é o seu script Python) para o diretório de trabalho no contêiner. Finalmente, o comando CMD especifica o comando que será executado quando o contêiner for iniciado.
+Neste Dockerfile, usei a imagem base python:3.8. O comando WORKDIR /app define o diretório de trabalho dentro do contêiner. O comando COPY copia o arquivo script.py para o diretório de trabalho no contêiner. Finalmente, o comando CMD especifica o comando que será executado quando o contêiner for iniciado.
 
 ```
 # Imagem do Python
