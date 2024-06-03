@@ -26,3 +26,15 @@ Criei um código para executar a consulta em SQL usando S3 Select
 
 ![alt text](figuras/consulta_funcao_string_sum.png) 
 
+# Criação da instância
+
+
+![Abrindo Instância](../Desafio/imagem_instancia/abrindo_instancia.png)
+
+![Tags](../Desafio/imagem_instancia/tags.png)
+
+![Tipo da intância](../Desafio/imagem_instancia/tipos_instancia.png)
+
+![Executando Instância](../Desafio/imagem_instancia/instancia_executando.png)
+
+![Interrompendo Istância](../Desafio/imagem_instancia/instancia_interrompida.png)
