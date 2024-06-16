@@ -51,6 +51,6 @@ Os comentários estão todos dentro do arquivo.
 # Desafio
 
 Os códigos estão no arquivo.
-[Desafio 4](desafio/desafio_sprint4.md)
+[Desafio 4](Desafio/desafio_sprint4.md)
 
 
