@@ -13,27 +13,41 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 # Exercícios
 
-- Nessa sprint não houve exercícios
+1. ...
+[Exercícios](exercicios/evidencias_exercicio.md)
 
 
 
 # Certificados
 
 1. ...
-[Certficado]()
+[Fundamentos de analytics na AWS-1](certificados/Fundamentos%20de%20analytics%20na%20AWS%20–%20Parte%201%20(Português).pdf)
 1. ...
-[Certficado]()
+[Fundamentos de analytics na AWS–2](certificados/Fundamentos%20de%20analytics%20na%20AWS%20–%20Parte%202%20(Português).pdf)
 1. ...
-[Certficado]()
+[Serverless Analytics](certificados/Serverless%20Analytics%20(Portuguese).pdf)
+1. ...
+[Introduction to Amazon Athena](certificados/Introduction%20to%20Amazon%20Athena%20(Portuguese).pdf)
+1. ...
+[AWS Glue Getting Started](certificados/AWS%20Glue%20Getting%20Started.pdf)
+1. ...
+[Amazon EMR Getting Started](certificados/Amazon%20EMR%20Getting%20Started.pdf)
+1. ...
+[Amazon Redshift Getting Started](certificados/Amazon%20Redshift%20Getting%20Started.pdf)
+1. ...
+[Best Practices for Data Warehousing with Amazon](certificados/Best%20Practices%20for%20Data%20Warehousing%20with%20Amazon.pdf)
+1. ...
+[Amazon QuickSight-Getting Started](certificados/Amazon%20QuickSight%20-%20Getting%20Started.pdf)
+
 
 # Evidências
 
 Os comentários estão todos dentro do arquivo.
-[Evidencia]()
+[Evidencia](evidencias/evidencias_desafio.md)
 
 # Desafio
 
 Os códigos estão no arquivo.
-[Desafio 6](Desafio/README.md)
+[Desafio 6](Desafio/codigos_desafio_06.md)
 
 

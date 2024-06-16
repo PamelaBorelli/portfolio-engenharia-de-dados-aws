@@ -39,6 +39,7 @@
 3. [Sprint 3](Sprint3/README.md)
 4. [Sprint 4](Sprint4/README.md)
 4. [Sprint 5](Sprint5/README.md)
+4. [Sprint 6](Sprint6/README.md)
 
 ## Desafio
 
