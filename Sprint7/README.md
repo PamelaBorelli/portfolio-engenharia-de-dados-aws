@@ -14,8 +14,9 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 # Exercícios
 
 1. ...
-[Exercícios](exercicios/exercicio_spark_sprint_07.md)
-
+[Exercícios](exercicios/exercicio/exercicio_spark_sprint_07.md)
+1. ...
+[lab_glue](exercicios/lab_glue/evidencias_lab_glue.md)
 
 
 # Certificados
