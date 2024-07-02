@@ -10,7 +10,9 @@
 5. [Criando novo job no AWS Glue](#criando-novo-job-no-aws-glue)
     - [Criação de alguns parâmetros](#criação-de-alguns-parâmetros)
 6. [Crawler](#crawler)
-
+7. [Conclusão Lab-Glue](#concusão-do-lab-glue)
+7. [Running](#running)
+6. [Athena](#usando-o-athena)
 
 # Introdução
 
@@ -90,5 +92,59 @@ Esse ponto ficou confuso, pois não sei qual a origem. Imagino que seja o arquiv
 ![Crawler_6](imagens_lab_glue/lab_28.png)
 ![Crawler_7](imagens_lab_glue/lab_29.png)
 
+## Conclusão do Lab-Glue
 
+Como havia  mencionado acima nesse arquivo. Não havia conseguido concluir o Lab no tempo estipulado, porém concluí e consegui aprender com usar não somente o Glue, o Crawler, mas também o Athena.
+
+Eu havia feito vários runnings e haviam falhados:
+
+![runnings](imagens_lab_glue/lab_30.png)
+
+## Running
+
+Porém entendi como fazer scripts
+
+```
+import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+from awsglue.job import Job
+from awsglue import DynamicFrame
+
+def sparkSqlQuery(glueContext, query, mapping, transformation_ctx) -> DynamicFrame:
+    for alias, frame in mapping.items():
+        frame.toDF().createOrReplaceTempView(alias)
+    result = spark.sql(query)
+    return DynamicFrame.fromDF(result, glueContext, transformation_ctx)
+args = getResolvedOptions(sys.argv, ['JOB_NAME'])
+sc = SparkContext()
+glueContext = GlueContext(sc)
+spark = glueContext.spark_session
+job = Job(glueContext)
+job.init(args['JOB_NAME'], args)
+
+# Script generated for node Amazon S3
+AmazonS3_node1719939666536 = glueContext.create_dynamic_frame.from_catalog(database="glue-lab-v2", table_name="input", transformation_ctx="AmazonS3_node1719939666536")
+
+# Script generated for node SQL Query
+SqlQuery0 = '''
+SELECT ano, sexo, COUNT(nome) AS contagem_de_nomes
+FROM myDataSource
+GROUP BY ano, sexo;
+```
+
+![contagem_nome](imagens_lab_glue/lab_31.png)
+
+
+![dataset_salvo](imagens_lab_glue/lab_32.png)
+
+![runnings](imagens_lab_glue/lab_33.png)
+
+![exemplo_dataset](imagens_lab_glue/lab_34.png)
+
+## Usando o athena
+![athena](imagens_lab_glue/lab_35.png)
+![athena_1](imagens_lab_glue/lab_36.png)
 
