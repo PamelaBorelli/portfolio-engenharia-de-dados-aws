@@ -14,6 +14,7 @@
         - [Visual ETL](#visual-etl-1)
         - [Script ETL](#script-etl)
 
+8. [Atualização do Job 2](#atualização-job-2)
 
 ## Introdução
 
@@ -181,3 +182,93 @@ Tentei realmente buscar meios de usar esse dado json. Acho que infelizmente não
 
 ![Job13](imagem/desafio_33.png)
 
+## Atualização Job 2
+
+Eu modifiquei o código para busca de dados na API, tomando cuidado com o formato do arquivo de saída.
+
+``` 
+import requests
+import json
+import boto3
+import os
+
+def lambda_handler(event, context):
+    # Obtém as chaves de acesso e o token de sessão das variáveis de ambiente
+    tmdb_api_key = os.environ['api_key']
+    access_key = os.environ.get('ACCESS_KEY_ID')
+    secret_key = os.environ.get('SECRET_ACCESS_KEY')
+    session_token = os.environ.get('SESSION_TOKEN')
+
+    # Nome do seu bucket S3 existente
+    s3_bucket_name = 'pamela-desafio-06'
+
+    # Nome do objeto que você deseja criar no S3
+    s3_object_key = 'data-lake-pamela/Raw/TMDB/JSON/2024/07/17/atores.json'
+
+    # Inicializa o cliente do Amazon S3 com as credenciais
+    s3 = boto3.client('s3', aws_access_key_id=access_key, aws_secret_access_key=secret_key, aws_session_token=session_token)
+
+    # Chame a função para obter os atores mais prolíficos
+    prolific_actors = get_most_prolific_actors(tmdb_api_key)
+
+    # Salve todos os dados em um arquivo JSON
+    with open("/tmp/atores.json", "w") as file:
+        json.dump(prolific_actors, file)
+
+    # Envie o arquivo JSON para o Amazon S3
+    s3.upload_file('/tmp/atores.json', s3_bucket_name, s3_object_key)
+
+    print("Todos os registros salvos e enviados para o Amazon S3.")
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Dados salvos e enviados para o Amazon S3!')
+    }
+
+def get_most_prolific_actors(api_key, num_pages=50):
+    base_url = "https://api.themoviedb.org/3/person/popular"
+    prolific_actors = []  # Usaremos uma lista de dicionários
+
+    for page in range(1, num_pages + 1):
+        params = {
+            "api_key": api_key,
+            "page": page,
+            "language": "en"
+        }
+        response = requests.get(base_url, params=params)
+        data = response.json()
+
+        for actor in data["results"]:
+            if actor["known_for_department"] == "Acting" and actor["popularity"] > 50:
+                actor_info = {
+                    "id": str(actor["id"]),
+                    "nome": actor["name"],
+                    "nome_original": actor["original_name"],
+                    "gênero": actor["gender"],
+                    "avaliação": actor["popularity"]
+                }
+                prolific_actors.append(actor_info)
+
+    return prolific_actors
+
+```
+
+O resultado foi um novo arquivo
+
+![atualização](imagem/desafio_adendo_1.png)
+
+Modifiquei aqui a estrutura do arquivo, estava em array também, modifiquei da maneira como queria, então ficou assim:
+
+![atualização1](imagem/desafio_adendo_2.png)
+
+Rodei mais uma vez o job
+
+![atualização2](imagem/desafio_adendo_3.png)
+
+Por fim consegui fazer o arquivo em parquet
+![atualização3](imagem/desafio_adendo_4.png)
+
+![atualização3](imagem/desafio_adendo_5.png)
+
+
+Então dessa maneira acredito que finalmente estou pronta para fazer o desafio 9 e não preciso desistir das perguntas que fiz inicialmente.
