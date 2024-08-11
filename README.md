@@ -46,7 +46,7 @@
 
 ## Desafio
 
-1. [Desafio Final](Desafio/README.md)
+1. [Desafio Final](Sprint10/README.md)
 
 
 ___
